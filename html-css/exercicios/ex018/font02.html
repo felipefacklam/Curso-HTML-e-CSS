@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            /*Criar nome que quiser*/
+            src: url('fonts/love larry.ttf') format('opentype'), url('font/love larry.ttf') format('trutype');
+            font-weight: normal;
+            font-style: normal;
+            /* 
+                Tipos de format()
+                - opentype ()
+                - truetype (ttf)
+                - embedded-opentype ()
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+                */
+        }
+
+        h1 {
+            font: 2em 'Love', Times, serif;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: end;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam enim odit doloribus obcaecati possimus
+        iste, pariatur aperiam dolores ad! Aliquam natus facere reiciendis nostrum hic quod quisquam maiores minus!
+        Incidunt maiores officiis voluptates, numquam a ipsum deserunt ab aliquam quia beatae laborum. Saepe, facilis
+        laboriosam minus quia voluptates dolores eum iusto nisi quas suscipit placeat aut mollitia aspernatur natus!</p>
+
+    <h2>Alinhamentos de Texto</h2> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, impedit. Optio, alias! Mollitia maiores itaque eius
+        officia necessitatibus labore libero ullam! Ex et eaque sit maiores cupiditate! Suscipit, expedita assumenda!
+        Cum doloremque natus ipsa quasi, repellendus excepturi quos officia quae ad reiciendis voluptatem aliquid
+        aliquam ea quam, amet illo quisquam, libero tenetur. Explicabo perspiciatis sapiente non, quidem asperiores iste
+        atque?
+        Suscipit, iusto? Illum necessitatibus fugit porro nemo non explicabo, voluptatum aliquam ipsam. Totam, nihil
+        numquam commodi possimus dolorem, corporis, dolorum provident consequatur iure blanditiis asperiores rerum
+        molestias. Ipsa, facere ipsum.</p>
+</body>
+
+</html>
