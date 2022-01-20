@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Trabalhando com links EXTERNOS</h1>
+    Voce pode acessar <a href="https://github.com/felipefacklam" target="_blank" rel="external">meu GitHub</a>
+    
+    <h1>DOWNLOADS</h1>
+    <ul>Opções
+        <li><a href="link-do-arquivo" download="nome-do-arquivo" type="applcation/formato">PDF</a></li>
+        <li><a href="link-do-arquivo" download="nome-do-arquivo" type="applcation/formato">ZIP</a></li>
+    </ul>
+    <h1>Imagens  Dinâmicas</h1>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imgs/p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imgs/m.jpg" type="image/jpg">
+        <img src="imgs/g.jpg" alt="Imagem da Lua">
+    </picture>
+</body>
+</html>
