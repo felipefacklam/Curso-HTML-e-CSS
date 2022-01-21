@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Android';
+    src: url('fonts/idroid.otf');
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    margin: 0;
+}
+header {
+    background-image: linear-gradient(to bottom, lightgreen, rgb(0, 73, 0));
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding: 1em;
+}   
+header > p {
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    padding-bottom: 1em;
+}
+nav {
+    text-align: start;
+    padding: .5em;
+}
+header > nav > a{
+    text-decoration: none;  
+    color: white;
+    font-size: .9em;
+    font-weight: bold;
+    margin-right: 1.5em;
+}
+main {
+    background-color: rgb(64, 224, 149);
+}
+section {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+    box-shadow: 2px 2px 9px 4px rgb(0 0 0 / 28%);
+}
+section > h1 {
+    font-family: 'Android', sans-serif;
+    color: rgb(0, 71, 0);
+}
+article > h2 {
+    background-image: linear-gradient(to right, rgb(64, 224, 149), white) ;
+    color: rgb(0, 71, 0);
+    font-family: 'Android', sans-serif;
+    font-size: 1.2em;
+    padding-left: .5em;
+}
+p {
+    text-align: justify;
+}
+img {
+    width: 100%;
+}
+footer {
+    background-color: green;
+    padding: .8em;
+}
+footer > p {
+    margin: 0;
+    font-size: .8em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.678);
+}
+#img-bugdroid {
+    text-align: center;
+    width: 50%;
+}
+.card {
+    padding: 0 .5em .2em .5em;
+    background-color: rgba(64, 224, 149, 0.651);   
+}
+.card h3 {
+    background-color: green;
+    color: white;
+    padding-top: .5em;
+}
