@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Clases/Elementos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+        }
+
+        div:hover {
+            background-color: lightgreen;
+        }
+
+        .special:hover {
+            background-color: lightpink;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: lightsalmon;
+        }
+
+        a:active {
+            color: saddlebrown;
+        }
+        
+        a:visited {
+            color:slateblue;
+        }
+
+        .first-letter::first-letter {
+            font-size: 3em;
+            color: blueviolet;
+        }
+        .selection::selection {
+            background-color: black;
+            color: blanchedalmond;
+        }
+
+        .marker::marker {
+            color: blueviolet;
+            content: '$ ';
+        }
+
+        input {
+            width: 200px            ;
+        }
+
+        .placeholder::placeholder {
+            background-color: black;
+            width: 200px;
+            color: whitesmoke;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo-Classes</h1>
+    <div>A</div>
+    <div class="special">B</div>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            ratione laboriosam ipsum molestiae doloremque, sed, </p>
+    </div>
+
+    <h1>Paseudo-elements</h1>
+    <h2>First-letter/Selection</h2>
+    <p class="first-letter selection">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    ratione laboriosam ipsum molestiae doloremque, sed,</p>
+    
+    <h2>Listas</h2>
+    <ul>
+        <li class="marker">Exemplo</li>
+        <li class="marker">Exemplo</li>
+        <li class="marker">Exemplo</li>
+    </ul>
+
+    <h2>Placeholder</h2>
+    <input type="text" placeholder="digite seu email" class="placeholder">    
+
+</body>
+
+</html>
