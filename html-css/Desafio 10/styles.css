@@ -1,88 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
     font-family: 'Android';
     src: url('fonts/idroid.otf');
 }
-body {
+:root {
+    --color1: #91C7B1;
+    --color2: #54494B;
+    --color3: #E3D081;
+    --color4: #B33951;
+    --color5: white;
+    --color6: black;
+
+}
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #91C7B1;
 }
-h1 {
-    margin: 0;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color1);
 }
 header {
-    background-image: linear-gradient(to bottom, #54494B, hsl(349, 7%, 10%));
+    background-image: linear-gradient(to bottom, var(--color2), hsl(349, 7%, 10%));
     font-family: 'Arial', sans-serif;
     color: white;
     text-align: center;
+    box-shadow: 1px 1px 5px 5px rgb(0 0 0 / 35%);
 }
 header > h1 {
-    color: #E3D081;
-    padding: 1em;
+    color: var(--color3);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    font-weight: normal;
+    padding: 20px;
 }   
 header > p {
-    color: #E3D081;
+    color: var(--color5);
+    font-size: .9em;
     margin: auto;
     text-align: center;
-    width: 40%;
-    padding-bottom: 1em;
+    max-width: 300px;
+    padding-bottom: 20px;
 }
 nav {
     text-align: start;
-    padding: .5em;
+    padding: 14px;
 }
 header > nav > a{
     text-decoration: none;  
-    color: white;
+    color: var(--color3);
     font-size: .9em;
     font-weight: bold;
-    margin: 0 1em 0 1em;
+    padding: 15px;
 }
 header > nav > a:hover {
-    background-color: #E3D081;
-    color: #54494B;
-    padding: .3em;
+    background-color: var(--color3);
+    color: var(--color2);
+    transition: .2s;
     border-radius: 2px;
 }
 main {
-    background-color: #F1F7ED;
-    width: 70%;
-    margin: 0 auto;
-    padding: 1em;
+    background-color: var(--color5);
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
     box-shadow: 2px 2px 9px 4px rgb(0 0 0 / 28%);
+}
+main p {
+    padding: 10px 0;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.7em;
 }
 section > h1 {
     font-family: 'Android', sans-serif;
-    color: #54494B;
+    color: var(--color2);
+    font-weight: normal;
 }
 article > h2 {
-    background-image: linear-gradient(to right, #91C7B1, white) ;
-    color: #54494B;
+    background-image: linear-gradient(to right, #91C7B1, transparent);
+    color: var(--color2);
     font-family: 'Android', sans-serif;
     font-size: 1.2em;
-    padding-left: .5em;
-}
-p {
-    text-align: justify;
+    font-weight: normal;
+    padding-left: 10px;
 }
 picture > img {
     width: 100%;
 }
-article figure iframe {
-    width: 100%;
+figcaption {
+    padding: 10px 0;
+}
+div.video {
+    position: relative;
+    background-color: var(--color2);
+    margin: 20px -20px;
+    padding-bottom: 56%;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 a{
     text-decoration: none;
-    color: #B33951;
+    color: var(--color4);
     font-weight: bold;
+}
+section a:hover {
+    color: #ff7490;
+    text-decoration: underline;
+    transition: .2s;
 }
 section a::after{
     content: '🔗';
 }
 strong {
-    color: #B33951;
+    color: var(--color4);
 }
 aside {
     background-color: hsl(156, 33%, 82%);
@@ -92,21 +130,24 @@ aside {
 aside h3 {
     background-color: hsl(156, 33%,40%);
     color: white;
-    padding: .8em;
+    padding: 10px 20px;
     border-radius: 10px 10px 0 0;
 }
 aside p {
-    padding: .8em;
+    padding: 10px 20px;
+    text-indent: 0;
 }
-ul {
-    display: inline-block;
+aside ul {
+    list-style-position: inside;
+    columns: 2;
+    padding: 0 20px;
 }
-ul li::marker {
+aside ul li::marker {
     content: '✓ ';
 }
 footer {
     background-color:hsl(349, 7%, 10%);
-    padding: .8em;
+    padding: 5px;
 }
 footer > p {
     margin: 0;
@@ -115,6 +156,7 @@ footer > p {
     color: rgba(255, 255, 255, 0.336);
 }
 #img-bugdroid {
-    text-align: center;
-    width: 50%;
+    display: block;
+    margin: auto;
+    max-width: 250px;
 }
