@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            height: 300px;
+        }
+        table caption {
+            background-color: lightgrey;
+            font-size: .9em;
+            padding: 7px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        th {
+            background-color: grey;
+            color: white;
+        }
+        .mulheres-titulo {
+            background-color: hsl(340, 57%, 45%);
+        }
+        .homens-titulo {
+            background-color: hsl(203, 92%, 55%);
+        }
+        .mulheres {
+            background-color: palevioletred;
+        }
+        .homens {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th id="g" scope="col">Grupo</th>
+                <th id="n" scope="col">Nomes</th>
+                <th id="f" colspan="3" scope="colgroup">Filmes</th>
+            </tr> <!--scope="COLGROUP / ROWGROUP" para indicar que não é só a primeira row/col-->
+        </thead>
+        <tbody>
+            <tr>
+                <th class="mulheres-titulo" rowspan="3" scope="rowgroup">Mulheres</th>
+                <td class="mulheres">Ana</td>
+                <td class="mulheres">Alien</td>
+                <td class="mulheres">Rambo</td>
+                <td class="mulheres">Vingadores</td>
+            </tr>
+            <tr>
+                <td class="mulheres">Beatriz</td>
+                <td class="mulheres">Hulk</td>
+                <td class="mulheres">Inception</td>
+                <td class="mulheres">Batman</td>
+            </tr>
+            <tr>
+                <td class="mulheres">Claudia</td>
+                <td class="mulheres">Oblivion</td>
+                <td class="mulheres">Matrix</td>
+                <td class="mulheres">Big Hero</td>
+            </tr>
+            <tr>
+                <th class="homens-titulo" rowspan="3" scope="rowgroup">Homens</th>
+                <td class="homens">Bruno</td>
+                <td class="homens">Intocáveis</td>
+                <td class="homens">Amnésia</td>
+                <td class="homens">Gladiador</td>
+            </tr>
+            <tr>
+                <td class="homens">Daniel</td>
+                <td class="homens">Wall-E</td>
+                <td class="homens">Oldboy</td>
+                <td class="homens">Dangal</td>
+            </tr>
+            <tr>
+                <td class="homens">Fabiano</td>
+                <td class="homens">Star Wars</td>
+                <td class="homens">Taxi Driver</td>
+                <td class="homens">Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
