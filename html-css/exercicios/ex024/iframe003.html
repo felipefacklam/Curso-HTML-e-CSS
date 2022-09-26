@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe#tela {
+            display: block;
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quia esse rerum molestiae harum omnis neque illo
+        ad ipsum natus sit, repellendus doloribus eos. Tempore recusandae accusamus dolores quos mollitia!
+    </p>
+
+    <ul>
+        <li><a href="paginasExtras/page001.html" target="iframe">Primeira página</a></li>
+        <li><a href="paginasExtras/page002.html" target="iframe">Segunda página</a></li>
+        <li><a href="paginasExtras/page003.html" target="iframe">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, autem. Labore natus officiis repellat rem?
+        Cupiditate qui sapiente nemo cum modi libero in, molestiae id amet necessitatibus, harum earum facere.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellat, nihil quam odio repudiandae eum
+        quisquam cum dolorum ducimus, necessitatibus nesciunt exercitationem provident eaque commodi sapiente optio
+        perspiciatis consequatur a?
+    </p>
+
+    <iframe srcdoc="<h2>Escolha uma das opções acima</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatem, quibusdam officia tempore fugit,
+            blanditiis quis, porro rem delectus odit soluta ad culpa nostrum. Accusantium nam eius doloribus earum
+            voluptatum!
+        </p>
+        <img src='imgs/falha.png' width='200px'>" id="tela" name="iframe"></iframe>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, autem. Labore natus officiis repellat rem?
+        Cupiditate qui sapiente nemo cum modi libero in, molestiae id amet necessitatibus, harum earum facere.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellat, nihil quam odio repudiandae eum
+        quisquam cum dolorum ducimus, necessitatibus nesciunt exercitationem provident eaque commodi sapiente optio
+        perspiciatis consequatur a?
+    </p>
+
+</body>
+
+</html>

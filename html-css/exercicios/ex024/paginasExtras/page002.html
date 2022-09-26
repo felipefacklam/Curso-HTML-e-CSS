@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border-collapse: collapse;
+            /*juntar bordas de tabelas*/
+        }
+
+        table caption {
+            background-color: lightgrey;
+            font: bold 1em 'Arial';
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            border: 1px solid black;
+            background-color: grey;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        tbody>tr:nth-child(even) {
+            /*(odd/even) / (2n/3n)*/
+            background-color: lightgrey;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px;
+            vertical-align: middle;
+            /*alinhamento vertical para tabelas*/
+        }
+
+        thead>tr>th { /*thead com sticky*/
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        td.numero {
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Minha Priemira Tabela</h1>
+    <table>
+        <caption>População dos Estados</caption>
+        <!--legenda de tabelas (vem sempre no topo)-->
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <!--SCOPE indica onde estão os "td" de um "th"-->>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 337 239</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7 164 788</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7 164 788</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7 164 788</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7 164 788</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <!--SCOPE relaciona o "th" com suas "td" -->
+                <td class="numero"> xxxxxx </td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis nisi nam aperiam sed fugiat beatae
+        quia odio minus quo dignissimos est, ipsum blanditiis. Soluta fugit rerum exercitationem consequatur dolor.
+    </p>
+</body>
+
+</html>
