@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="timeprimeiro">
+
+        Time1 <input type="text" name="time1"> X <input type="text" name="time2">Time2</label>
+    </form>
+    <form id="timesegundo">
+        <label>Time3 <input type="text" name="time3"> X <input type="text" name="time4">Time4</label>
+
+    </form>
+
+    <input type="submit" id="botao" name="botao" value="Final">
+
+
+
+    <script>
+
+
+        var times = []; // vetor declarado
+        times.push("Gremio"); // string sendo colocada dentro da ultima posição do vetor
+        times.push("Inter"); // string sendo colocada dentro da ultima posição do vetor
+        times.push("Santos"); // string sendo colocada dentro da ultima posição do vetor
+        times.push("Palmeiras"); // string sendo colocada dentro da ultima posição do vetor
+
+        var time1 = times[0]; // variavel recebendo posição 0 do vetor, que no caso é gremio
+        window.alert(time1); // variavel sendo mostrada
+
+        var botao = document.getElementById("botao");
+        botao.addEventListener("click", capturar);
+
+        function capturar() {
+            var time1 = document.getElementById("time1").value;
+            var time2 = document.getElementById("time2").value;
+            var time3 = document.getElementById("time3").value;
+            var time4 = document.getElementById("time4").value;
+
+        }
+
+    </script>
+</body>
+
+</html>
